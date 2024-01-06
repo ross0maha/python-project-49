@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
-
-def do_greetings() -> None:
-    """
-    Welcome function.
-    Just typing greeting.
-    """
-    print("Welcome to the Brain Games!")
+import brain_games.cli as cli
 
 
 def main() -> None:
     """Main entry function."""
-    do_greetings()
+    cli.welcome_user()
 
 
 if __name__ == "__main__":
