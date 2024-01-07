@@ -29,13 +29,13 @@ def main() -> None:
         # Input answer from user with prompt lib
         answer = prompt.string('Your answer: ')
         # Answer check
-        if not rnd_int % 2 and answer == 'yes':
+        if rnd_int % 2 == 0 and answer == 'yes':
             good_answer()
-        elif rnd_int % 2 and answer == 'no':
+        elif rnd_int % 2 != 0 and answer == 'no':
             good_answer()
-        elif not rnd_int % 2 and answer != 'yes':
+        elif rnd_int % 2 == 0 and answer != 'yes':
             bad_answer(answer, name, 'yes')
-        elif rnd_int % 2 and answer != 'no':
+        elif rnd_int % 2 != 0 and answer != 'no':
             bad_answer(answer, name, 'no')
     print(f"Congratulations, {name}!")
 
