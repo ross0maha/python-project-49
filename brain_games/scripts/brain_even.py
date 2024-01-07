@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import brain_games.cli as cli
+from brain_games.cli import welcome_user
 from random import randint
 import prompt
 
@@ -29,7 +29,7 @@ def main() -> None:
     """
 
     # Input user name func with prompt lib
-    name = cli.welcome_user()
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     # start the cycle for three tries
