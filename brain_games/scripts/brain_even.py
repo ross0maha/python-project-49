@@ -4,6 +4,16 @@ from random import randint
 import prompt
 
 
+def good_answer():
+    print("Correct!")
+
+
+def bad_answer(answer, name, key_w):
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{key_w}'.")
+    print(f"Let's try again, {name}")
+    exit()
+
+
 def main() -> None:
     """
     Brain-Even - is a frist game to reconizing random even-number.
@@ -17,17 +27,13 @@ def main() -> None:
         answer = prompt.string('Your answer: ')
         # Answer check
         if not rnd_int % 2 and answer == 'yes':
-            print("Correct!")
+            good_answer()
         elif rnd_int % 2 and answer == 'no':
-            print("Correct!")
+            good_answer()
         elif not rnd_int % 2 and answer != 'yes':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-            print(f"Let's try again, {name}")
-            return 0
+            bad_answer(answer, name, 'yes')
         elif rnd_int % 2 and answer != 'no':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}")
-            return 0
+            bad_answer(answer, name, 'no')
     print(f"Congratulations, {name}!")
 
 
