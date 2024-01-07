@@ -4,11 +4,13 @@ from random import randint
 import prompt
 
 
-def good_answer():
+def good_answer() -> None:
+    """Function for good answer and continue"""
     print("Correct!")
 
 
-def bad_answer(answer, name, key_w):
+def bad_answer(answer: str, name: str, key_w: str) -> None:
+    """Function for bad answer end exit game"""
     print(f"'{answer}' is wrong answer ;(. Correct answer was '{key_w}'.")
     print(f"Let's try again, {name}")
     exit()
@@ -18,12 +20,13 @@ def main() -> None:
     """
     Brain-Even - is a frist game to reconizing random even-number.
     """
-    name = cli.welcome_user()
+    name = cli.welcome_user()  # Input user name func with prompt lib
     print('Answer "yes" if the number is even, otherwise answer "no".')
     # start the cycle for three tries
     for i in range(3):
-        rnd_int = randint(0, 100)
+        rnd_int = randint(0, 100)  # Generate random int from 0 to 100
         print(f"Question: {rnd_int}")
+        # Input answer from user with prompt lib
         answer = prompt.string('Your answer: ')
         # Answer check
         if not rnd_int % 2 and answer == 'yes':
