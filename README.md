@@ -5,4 +5,5 @@
 ## Brain-Even is a first game.
 
 Demo, how install and play:
-[![asciicast](https://asciinema.org/a/g5yegFkfpkDXYY9bBEavZDhs5.svg)](https://asciinema.org/a/g5yegFkfpkDXYY9bBEavZDhs5)
+[![asciicast](https://asciinema.org/a/0lxZs0uvlVgKnmgtOgYBo2NrS.svg)](https://asciinema.org/a/0lxZ
+
