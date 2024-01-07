@@ -4,39 +4,54 @@ from random import randint
 import prompt
 
 
-def good_answer() -> None:
-    """Function for good answer and continue"""
-    print("Correct!")
-
-
-def bad_answer(answer: str, name: str, key_w: str) -> None:
+def bad_answer(answer: str, name: str, rnd_int: int) -> None:
     """Function for bad answer end exit game"""
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{key_w}'.")
+
+    true_answer = "no" if rnd_int % 2 else "yes"
+
+    print(f"'{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
     print(f"Let's try again, {name}")
     exit()
+
+
+def is_even(value) -> bool:
+    """Check even function"""
+
+    if value % 2 == 0:
+        return True
+    else:
+        return False
 
 
 def main() -> None:
     """
     Brain-Even - is a frist game to reconizing random even-number.
     """
-    name = cli.welcome_user()  # Input user name func with prompt lib
+
+    # Input user name func with prompt lib
+    name = cli.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
     # start the cycle for three tries
     for i in range(3):
-        rnd_int = randint(0, 100)  # Generate random int from 0 to 100
+
+        # Generate random int from 0 to 100 and print question
+        rnd_int = randint(0, 100)
         print(f"Question: {rnd_int}")
+
         # Input answer from user with prompt lib
         answer = prompt.string('Your answer: ')
-        # Answer check
-        if rnd_int % 2 == 0 and answer == 'yes':
-            good_answer()
-        elif rnd_int % 2 != 0 and answer == 'no':
-            good_answer()
-        elif rnd_int % 2 == 0 and answer != 'yes':
-            bad_answer(answer, name, 'yes')
-        elif rnd_int % 2 != 0 and answer != 'no':
-            bad_answer(answer, name, 'no')
+
+        # Check answer
+        condition = [is_even(rnd_int), answer]
+        match condition:
+            case [True, "yes"]:
+                print("Correct!")
+            case [False, "no"]:
+                print("Correct!")
+            case _:
+                bad_answer(answer, name, rnd_int)
+
     print(f"Congratulations, {name}!")
 
 
