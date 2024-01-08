@@ -1,7 +1,7 @@
-<p align="center">
+<div align="center">
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ross0maha/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ross0maha/python-project-49/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)</div>
 
 ```
   ____            _              ____                           
@@ -12,7 +12,7 @@
 ```
 
 #### My first project in the He\}\{let school.
-</p>
+
 
 ### Brain-Even game.
 
