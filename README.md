@@ -15,5 +15,5 @@
 
 ### Brain-Even game.
 
-Demo, how install and play:
-[![asciicast](https://asciinema.org/a/0lxZs0uvlVgKnmgtOgYBo2NrS.svg)](https://asciinema.org/a/0lxZs0uvlVgKnmgtOgYBo2NrS)
+Play demo
+![(src/brain-even.gif)|800](src/brain-even.gif)
