@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/ross0maha/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ross0maha/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
 
-<div class="embed-responsive embed-responsive-16by9" align="center">
+<div class="embed-responsive embed-responsive-16by9">
 <iframe src="./src/animated-text/dist/text2.html" height="200px" width="900px"></iframe>
 </div>
 
