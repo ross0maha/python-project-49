@@ -3,10 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
 
 
-<iframe src="./src/animated-text/dist/text2.html" height="200px" width="900px"></iframe>
-
-
-[![]](./src/animated-text/dist/text2.html)
+<embed src="./src/animated-text/dist/text2.html" width="750" />
 
 
 ```
