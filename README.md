@@ -3,12 +3,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
 
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxBReaj" data-user="Dmitry-Yuroff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/Dmitry-Yuroff/pen/xxBReaj">
+<iframe height="300" style="width: 100%;" scrolling="no" title="Animated text fill with svg text practice" src="https://codepen.io/Dmitry-Yuroff/embed/xxBReaj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Dmitry-Yuroff/pen/xxBReaj">
   Animated text fill with svg text practice</a> by Dmitry Yuroff (<a href="https://codepen.io/Dmitry-Yuroff">@Dmitry-Yuroff</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 
 ```
