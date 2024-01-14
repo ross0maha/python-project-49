@@ -1,17 +1,7 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
+from brain_games.cli import *
 from random import randint
 import prompt
-
-
-def bad_answer(answer: str, name: str, rnd_int: int) -> None:
-    """Function for bad answer end exit game"""
-
-    true_answer = "no" if rnd_int % 2 else "yes"
-
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{true_answer}'.")
-    print(f"Let's try again, {name}")
-    exit()
 
 
 def is_even(value) -> bool:
@@ -29,7 +19,7 @@ def main() -> None:
     """
 
     # Input user name func with prompt lib
-    name = welcome_user()
+    user_name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     # start the cycle for three tries
@@ -40,19 +30,21 @@ def main() -> None:
         print(f"Question: {rnd_int}")
 
         # Input answer from user with prompt lib
-        answer = prompt.string('Your answer: ')
+        user_answer = prompt.string('Your answer: ')
+
+        true_answer = 'yes' if rnd_int % 2 == 0 else 'no'
 
         # Check answer
-        condition = [is_even(rnd_int), answer]
+        condition = [is_even(rnd_int), user_answer]
         match condition:
             case [True, "yes"]:
                 print("Correct!")
             case [False, "no"]:
                 print("Correct!")
             case _:
-                bad_answer(answer, name, rnd_int)
+                bad_answer(true_answer, user_answer, user_name)
 
-    print(f"Congratulations, {name}!")
+    print(f"Congratulations, {user_name}!")
 
 
 if __name__ == "__main__":
