@@ -3,17 +3,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
 
 
-<embed src="./src/animated-text/dist/text2.html" width="750" />
+![](./src/readme_logo.png)
 
-
-```
-                 ____            _              ____                           
-                | __ ) _ __ __ _(_)_ __        / ___| __ _ _ __ ___   ___  ___ 
-                |  _ \| '__/ _` | | '_ \ _____| |  _ / _` | '_ ` _ \ / _ \/ __|
-                | |_) | | | (_| | | | | |_____| |_| | (_| | | | | | |  __/\__ \
-                |____/|_|  \__,_|_|_| |_|      \____|\__,_|_| |_| |_|\___||___/
-
-```
 
 ### Install :floppy_disk: :
 
