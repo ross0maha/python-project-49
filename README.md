@@ -2,8 +2,6 @@
 [![Actions Status](https://github.com/ross0maha/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ross0maha/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2e3053157b86113f589e/maintainability)](https://codeclimate.com/github/ross0maha/python-project-49/maintainability)
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="SVG - Text Animation" src="https://codepen.io/webstoryboy/embed/rrLdQX?default-tab=html&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-</iframe>
 
 ```
                  ____            _              ____                           
