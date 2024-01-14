@@ -4,6 +4,12 @@
 
 ## First project in the He\}\{let school on python developer course.
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="Animated text fill with svg text practice" src="https://codepen.io/Dmitry-Yuroff/embed/xxBReaj?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Dmitry-Yuroff/pen/xxBReaj">
+  Animated text fill with svg text practice</a> by Dmitry Yuroff (<a href="https://codepen.io/Dmitry-Yuroff">@Dmitry-Yuroff</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
 ```
                  ____            _              ____                           
                 | __ ) _ __ __ _(_)_ __        / ___| __ _ _ __ ___   ___  ___ 
