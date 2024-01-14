@@ -11,10 +11,10 @@
             |____/|_|  \__,_|_|_| |_|      \____|\__,_|_| |_| |_|\___||___/
 ```
 
-#### My first project in the He\}\{let school.
+### My first project in the He\}\{let school.
 
 
-### Brain-Even game.
+#### Brain-Even game.
 
 Demo, how install and play:
-[![asciicast](https://asciinema.org/a/0lxZs0uvlVgKnmgtOgYBo2NrS.svg)](https://asciinema.org/a/0lxZs0uvlVgKnmgtOgYBo2NrS)
+[![asciicast](src/brain-even.gif)](src/brain-even.gif)
