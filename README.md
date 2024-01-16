@@ -27,7 +27,7 @@
 
 ### :x: Uninstall :
 
-To uninstall packages type in commandline from project directory `make uninstall`
+To uninstall packages type in command line from project directory `make uninstall`
 
 ---
 
