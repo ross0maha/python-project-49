@@ -37,5 +37,7 @@ To uninstall packages type in commandline from project directory `make uninstall
 ![](src/brain-even.gif)
 
 #### Brain-Calc game
-
 ![](src/brain-calc.gif)
+
+#### Brain-gcd game
+![](src/brain-gcd.gif)

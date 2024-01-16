@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.cli import *
+from brain_games.cli import welcome_user, bad_answer
 from random import randint
 import prompt
 
@@ -18,7 +18,7 @@ def main() -> None:
     Brain-Even - is a frist game to reconizing random even-number.
     """
 
-    # Input user name func with prompt lib
+    # Input user name func with prompt lib and print condition
     user_name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
