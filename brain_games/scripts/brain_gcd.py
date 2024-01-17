@@ -14,7 +14,7 @@ def gcd(num1, num2) -> int:
 
 def main() -> None:
     """
-    Brain-gcd - is a thrid game to calculate gcd (greatest common divisor)).
+    Brain-gcd - is a thrid game to calculate gcd (greatest common divisor).
     """
 
     # Input user name func with prompt lib and print condition
