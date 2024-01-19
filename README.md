@@ -49,3 +49,6 @@ To uninstall packages type in command line from project directory `make uninstal
 
 #### Brain-progression game
 ![](src/brain-progression.gif)
+
+#### Brain-prime game
+![](src/brain-prime.gif)

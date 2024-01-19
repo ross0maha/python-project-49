@@ -61,8 +61,9 @@ def main():
             print("Correct!")
         else:
             bad_answer(true_answer, user_answer, user_name)
-    
+
     print(f"Congratulations, {user_name}!")
+
 
 if __name__ == "__main__":
     main()
