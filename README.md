@@ -21,13 +21,18 @@
 
 ### :warning: Usage :
 
-- 
-- 
-- 
+- Type in termial name of game:
+    - `brain-even` to reconizing random even-number.
+    - `brain-calc` to calculate math expression.
+    - `brain-gcd` to calculate gcd (greatest common divisor)
+    - `brain-progression` to guess the missing number in a mathematical progression.
+- Give correct answer!
+
+### :tada: And WIN!
 
 ### :x: Uninstall :
 
-To uninstall packages type in commandline from project directory `make uninstall`
+To uninstall packages type in command line from project directory `make uninstall`
 
 ---
 
@@ -37,5 +42,13 @@ To uninstall packages type in commandline from project directory `make uninstall
 ![](src/brain-even.gif)
 
 #### Brain-Calc game
-
 ![](src/brain-calc.gif)
+
+#### Brain-gcd game
+![](src/brain-gcd.gif)
+
+#### Brain-progression game
+![](src/brain-progression.gif)
+
+#### Brain-prime game
+![](src/brain-prime.gif)
