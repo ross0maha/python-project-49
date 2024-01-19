@@ -32,7 +32,7 @@ def main() -> None:
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for i in range(3):
-        
+
         # Generate random number for question
         question = randint(1, 100)
 
