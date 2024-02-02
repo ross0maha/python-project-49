@@ -19,4 +19,4 @@ def run_game(get_question_and_answer, game_promt):
                   f"Correct answer is '{correct_answer}'.\n"
                   f"Let's try again, {user_name}!")
             return
-    print(f"Congritulation, {user_name}")
+    print(f"Congritulation, {user_name}!")
