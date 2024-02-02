@@ -7,6 +7,7 @@ def welcome_user() -> str:
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
+<<<<<<< HEAD
 
 
 def bad_answer(true_answer: str, user_answer: str, user_name: str) -> None:
@@ -16,3 +17,5 @@ def bad_answer(true_answer: str, user_answer: str, user_name: str) -> None:
            "Correct answer was '{true_answer}'.")
     print(f"Let's try again, {user_name}")
     exit()
+=======
+>>>>>>> dev

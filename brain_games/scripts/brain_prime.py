@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user, bad_answer
-from random import randint
-import prompt
+from brain_games.games.prime_src import run_prime_game
 
 
+<<<<<<< HEAD
 def is_prime(num) -> str:
     """
     This function returns "yes" if incoming number is prime
@@ -51,6 +50,10 @@ def main() -> None:
             bad_answer(true_answer, user_answer, user_name)
 
     print(f"Congratulations, {user_name}!")
+=======
+def main():
+    run_prime_game()
+>>>>>>> dev
 
 
 if __name__ == "__main__":
