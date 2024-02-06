@@ -7,6 +7,15 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+
+[project.urls]
+Homepage = "https://hexlet.io"
+Repository = "https://github.com/ross0maha/python-project-49"
 
 
 [tool.poetry.dependencies]
