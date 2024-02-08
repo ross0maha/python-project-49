@@ -1,6 +1,5 @@
 import random
-from brain_games.const import PRIME_PROMT
-from brain_games.engine import run_game
+from brain_games.const import RND_MIN, RND_MAX
 
 
 def is_prime(num):
@@ -8,16 +7,17 @@ def is_prime(num):
     count = 2
     while count <= num_sqrt:
         if num % count == 0:
-            return "no"
+            return False
         else:
             count += 1
-    return "yes"
+    return True
 
 
 def get_question_and_answer():
-    question = random.randint(1, 100)
-    return question, is_prime(question)
+    question = random.randint(RND_MIN + 1, RND_MAX)
+    true_answer = 'yes' if is_prime(question) else 'no'
+    return question, true_answer
 
 
 def run_prime_game():
-    run_game(get_question_and_answer, PRIME_PROMT)
+    return get_question_and_answer
