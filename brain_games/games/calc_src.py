@@ -1,10 +1,10 @@
 import random
-from brain_games.engine import run_game
-from brain_games.const import CALC_PROMT, OPERATORS
+from brain_games.const import OPERATORS, RND_CALC_MIN, RND_CALC_MAX
 
 
-def get_eval_and_answer():
-    num1, num2 = random.randint(1, 50), random.randint(1, 50)
+def get_eval_and_answer() -> tuple:
+    num1 = random.randint(RND_CALC_MIN, RND_CALC_MAX)
+    num2 = random.randint(RND_CALC_MIN, RND_CALC_MAX)
     operator = random.choice(OPERATORS)
     question = f'{num1} {operator} {num2}'
 
@@ -20,4 +20,4 @@ def get_eval_and_answer():
 
 
 def run_calc_game():
-    run_game(get_eval_and_answer, CALC_PROMT)
+    return get_eval_and_answer

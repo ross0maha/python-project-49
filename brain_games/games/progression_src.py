@@ -1,6 +1,7 @@
 import random
-from brain_games.const import PROGRESSION_PROMT
-from brain_games.engine import run_game
+from brain_games.const import LENGTH_START, LENGTH_END
+from brain_games.const import STEP_FROM, STEP_TO
+from brain_games.const import PROG_START, PROG_END
 
 
 def do_rand() -> tuple:
@@ -11,9 +12,9 @@ def do_rand() -> tuple:
         miss_num - random numder for question
     """
 
-    length = random.randint(5, 10)
-    step = random.randint(1, 7)
-    start = random.randint(0, 50)
+    length = random.randint(LENGTH_START, LENGTH_END)
+    step = random.randint(STEP_FROM, STEP_TO)
+    start = random.randint(PROG_START, PROG_END)
     result = list(range(start, start + step * length, step))
     miss_position = random.randint(0, length - 1)
     miss_num = result[miss_position]
@@ -43,4 +44,4 @@ def get_question_and_answer():
 
 def run_progression_game():
 
-    run_game(get_question_and_answer, PROGRESSION_PROMT)
+    return get_question_and_answer
