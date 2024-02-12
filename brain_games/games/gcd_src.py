@@ -13,7 +13,3 @@ def get_question_and_answer():
     num2 = random.randint(RND_MIN, RND_MAX)
     answer = get_gcd(num1, num2)
     return f"{num1} {num2}", str(answer)
-
-
-def run_gcd_game():
-    return get_question_and_answer

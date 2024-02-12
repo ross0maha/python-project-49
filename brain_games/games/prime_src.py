@@ -17,7 +17,3 @@ def get_question_and_answer():
     question = random.randint(RND_MIN + 1, RND_MAX)
     true_answer = 'yes' if is_prime(question) else 'no'
     return question, true_answer
-
-
-def run_prime_game():
-    return get_question_and_answer

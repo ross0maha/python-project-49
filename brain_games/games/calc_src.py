@@ -1,5 +1,8 @@
 import random
-from brain_games.const import OPERATORS, RND_CALC_MIN, RND_CALC_MAX
+
+RND_CALC_MIN = 1
+RND_CALC_MAX = 50
+OPERATORS = ['+', '-', '*']
 
 
 def get_eval_and_answer() -> tuple:
@@ -17,7 +20,3 @@ def get_eval_and_answer() -> tuple:
             correct_answer = num1 * num2
 
     return (question, str(correct_answer))
-
-
-def run_calc_game():
-    return get_eval_and_answer

@@ -10,7 +10,3 @@ def get_randint_and_answer() -> tuple:
     question = random.randint(RND_MIN, RND_MAX)
     correct_answer = 'yes' if question % 2 == 0 else 'no'
     return question, correct_answer
-
-
-def run_even_game():
-    return get_randint_and_answer

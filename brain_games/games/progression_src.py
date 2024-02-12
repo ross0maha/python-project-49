@@ -1,41 +1,42 @@
 import random
-from brain_games.const import LENGTH_START, LENGTH_END
-from brain_games.const import STEP_FROM, STEP_TO
-from brain_games.const import PROG_START, PROG_END
+
+LENGTH_START = 4
+LENGTH_END = 10
+STEP_FROM = 1
+STEP_TO = 7
+PROG_START = 1
+PROG_END = 50
 
 
-def generate_question_string(string_lenght, string_step, string_start):
+def generate_question_progression(progression_start,
+                                  progression_diff,
+                                  progression_length):
 
-    question_string = list(range(string_start, string_start + string_step
-                                 * string_lenght, string_step))
+    question_progression = list(range(progression_start, progression_start
+                                      + progression_diff * progression_length,
+                                      progression_diff))
+    return question_progression
 
-    return question_string
 
-
-def question_list_to_string(list_seq, position):
-
-    result = list(map(lambda x: str(x), list_seq))
-    result[position] = ".."
+def to_string(progression, hidden_term_index):
+    result = list(map(lambda x: str(x), progression))
+    result[hidden_term_index] = ".."
     result = " ".join(result)
 
     return result
 
 
 def get_question_and_answer():
-    question_string_length = random.randint(LENGTH_START, LENGTH_END)
-    question_string_step = random.randint(STEP_FROM, STEP_TO)
-    question_string_start = random.randint(PROG_START, PROG_END)
-    miss_position = random.randint(0, question_string_length - 1)
+    progression_length = random.randint(LENGTH_START, LENGTH_END)
+    progression_diff = random.randint(STEP_FROM, STEP_TO)
+    progression_start = random.randint(PROG_START, PROG_END)
+    hidden_term_index = random.randint(0, progression_length - 1)
 
-    question_seq = generate_question_string(question_string_length,
-                                            question_string_step,
-                                            question_string_start)
+    question_seq = generate_question_progression(progression_start,
+                                                 progression_diff,
+                                                 progression_length)
 
-    question_str = question_list_to_string(question_seq.copy(), miss_position)
-    true_answer = question_seq[miss_position]
+    question_prog_str = to_string(question_seq.copy(), hidden_term_index)
+    true_answer = question_seq[hidden_term_index]
 
-    return question_str, str(true_answer)
-
-
-def run_progression_game():
-    return get_question_and_answer
+    return question_prog_str, str(true_answer)
