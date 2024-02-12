@@ -1,6 +1,6 @@
 import random
 
-LENGTH_START = 4
+LENGTH_START = 5
 LENGTH_END = 10
 STEP_FROM = 1
 STEP_TO = 7
