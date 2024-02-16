@@ -1,6 +1,8 @@
 import random
 from brain_games.const import RND_MIN, RND_MAX
 
+EVEN_PROMT = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def is_even(value) -> bool:
     return value % 2

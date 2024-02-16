@@ -3,6 +3,7 @@ import random
 RND_CALC_MIN = 1
 RND_CALC_MAX = 50
 OPERATORS = ['+', '-', '*']
+CALC_PROMT = 'What is the result of the expression?'
 
 
 def get_eval_and_answer() -> tuple:

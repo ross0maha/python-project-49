@@ -7,6 +7,8 @@ STEP_TO = 7
 PROG_START = 1
 PROG_END = 50
 
+PROGRESSION_PROMT = 'What number is missing in the progression?'
+
 
 def generate_question_progression(progression_start,
                                   progression_diff,

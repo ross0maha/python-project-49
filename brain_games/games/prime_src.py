@@ -1,6 +1,9 @@
 import random
 from brain_games.const import RND_MIN, RND_MAX
 
+PRIME_PROMT = 'Answer "yes" if given number is prime. ' \
+              'Otherwise answer "no".'
+
 
 def is_prime(num):
     num_sqrt = int(num ** 0.5)

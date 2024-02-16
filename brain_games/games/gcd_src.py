@@ -1,6 +1,8 @@
 import random
 from brain_games.const import RND_MIN, RND_MAX
 
+GCD_PROMT = 'Find the greatest common divisor of given numbers.'
+
 
 def get_gcd(num1, num2) -> int:
     while (num2):

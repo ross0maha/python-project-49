@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.games.calc_src import get_eval_and_answer
+from brain_games.games.calc_src import CALC_PROMT
 from brain_games.engine import run_game
-
-CALC_PROMT = 'What is the result of the expression?'
 
 
 def main():
